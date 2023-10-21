@@ -51,9 +51,9 @@ promptUser();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         const n = yield promptUser();
-        console.log(`You entered: ${n}`);
         const digitalRoot = parse(n);
         const sum = summation(digitalRoot);
+        console.log(`You entered: ${n}`);
         console.log(`Sum of digits: ${sum}`);
     });
 }
